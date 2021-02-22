@@ -8,7 +8,7 @@ def main():
 	parser.add_argument("-c", "--credentials", action="store", nargs=3, required=False, help="Username, password, and TOTP separated by a space", dest="creds")
 	parser.add_argument("-s", "--simulation", action="store_true", required=False, help="Run simulation without placing actual orders", dest="sim")
 
-	parser.add_argument("-g", "--generate_excel_file", action="store_true", required=False, help="Generate excel file", dest="generate_excel_file")
+	parser.add_argument("-g", "--generate_file", action="store", required=False, choices=["csv", "excel"], help="Generate excel/csv file", dest="generate_file")
 	parser.add_argument("-n", "--get_new_investments", action="store_true", required=False, help="Get new investments", dest="get_new_investments")
 	parser.add_argument("-o", "--get_current_investments", action="store_true", required=False, help="Get current investments", dest="get_current_investments")
 	parser.add_argument("-p", "--sell_all_stocks", action="store_true", required=False, help="Sell all stocks", dest="sell_all_stocks")
@@ -26,8 +26,13 @@ def main():
 
 	robinhood = Robinhood.Robinhood(**kwargs)
 
-	if args.generate_excel_file:
-		robinhood.generate_excel_file()
+	if args.generate_file:
+		if args.generate_file == "csv":
+			robinhood.generate_csv_file()
+		elif args.generate_file == "excel":
+			robinhood.generate_excel_file()
+		else:
+			parser.error("Invalid option. Choose 'csv' or 'exce'.")
 		sys.exit()
 
 	if args.get_new_investments:
