@@ -59,7 +59,19 @@ I would start by creating a watchlist on Robinhood called `Portfolio` that would
 
 ![Robinhood Portfolio List](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/portfolio_list.png)
 
-I would like to allocate *10%* to **AAPL**, *20%* to **AMZN**, *30%* to **MSFT**, and finally, *40%* to **TSLA**. I would configure my excel/CSV file as follows:
+I would then run:
+```bash
+$ ropoma --generate_file excel
+```
+to generate an excel file, or:
+```bash
+$ ropoma --generate_file csv
+```
+to generate a CSV file.
+
+The generated file can be found in the `Documents` directory on Windows and in the user's `home` folder on Linux/Mac.
+
+I would like to allocate *10%* to **AAPL**, *20%* to **AMZN**, *30%* to **MSFT**, and finally, *40%* to **TSLA**. Therefore, I would configure my excel/CSV file as follows:
 
 ![Example of an allocated excel file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_allocated.png)
 
