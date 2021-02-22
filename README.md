@@ -1,6 +1,6 @@
 # Robinhood Portfolio Manager
 
-A python CLI  to that allows a Robinhood user to easily allocate and divide his capital on different stocks.
+A python CLI  that allows a Robinhood user to easily allocate and divide his capital on different stocks.
 
 ## Disclaimer
 **This tool is intended to simplify and enhance user experience. It does not in any means convey financial advice, and the author is not responsible for any loss that might incur due to it's usage. USE AT YOUR OWN RISK.**
@@ -44,17 +44,9 @@ to generate a CSV file.
 
 After generating the excel/CSV file, you will have to configure the allocation for each stock. The generated file can be found in the `Documents` directory on Windows and in the user's `home` folder on Linux/Mac.
 
-<figure>
-<img
-src="https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_file.png"
-  alt="Excel File">
-  <figcaption>Example of a generated excel file</figcaption>
-  <img
-src="https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/csv_file.png"
-  alt="CSV File">
-  <figcaption>Example of a generated CSV file</figcaption>
-</figure>
+![Example of a generated excel file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_file.png)
 
+![Example of a generated CSV file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/csv_file.png)
 
 ## Example
 Let's say I would like my portfolio to consist of 4 different stocks:
@@ -65,25 +57,13 @@ Let's say I would like my portfolio to consist of 4 different stocks:
 
 I would start by creating a watchlist on Robinhood called `Portfolio` that would hold those 4 stocks.
 
-<figure>
-<img
-src="https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/portfolio_list.png"
-  alt="Robinhood Portfolio List">
-  <figcaption>Robinhood Portfolio List</figcaption>
-</figure>
+![Robinhood Portfolio List](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/portfolio_list.png)
 
 I would like to allocate *10%* to **AAPL**, *20%* to **AMZN**, *30%* to **MSFT**, and finally, *40%* to **TSLA**. I would configure my excel/CSV file as follows:
 
-<figure>
-<img
-src="https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_allocated.png"
-  alt="Excel File Allocated">
-  <figcaption>Example of an allocated excel file</figcaption>
-  <img
-src="https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/csv_allocated.png"
-  alt="CSV File Allocated">
-  <figcaption>Example of an allocated CSV file</figcaption>
-</figure>
+![Example of an allocated excel file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_allocated.png)
+
+![Example of an allocated CSV file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/csv_allocated.png)
 
 Finally, I would like rebalance my portfolio to match my allocations. To do so, I would run:
 ```bash
@@ -91,12 +71,7 @@ $ ropoma --rebalance --simulation
 ```
 It's good practice to run the tool using the `-s` or `--simulation` flag. This allows me to check the log file and make sure that the buy/sell orders are correct. The log file will be created in the same directory as excel/CSV file, and will be named `Robinhood.log`. 
 
-<figure>
-<img
-src="https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/log_file.png"
-  alt="Log File">
-  <figcaption>Example of the log file</figcaption>
-</figure>
+![Example of the log file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/log_file.png)
 
 If the log file looks good, I would then re-run the script without the `--simulation` flag to execute the buy/sell orders.
 ```bash
