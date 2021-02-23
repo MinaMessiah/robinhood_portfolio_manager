@@ -4,7 +4,7 @@
 # Author: Mina Messiha
 # Copyright: Copyright 2021, robinhood-portfolio-manager
 # License: MIT License
-# Version: 0.0b1
+# Version: 0.0b2
 # Date: 02-22-2021
 # Email: mena.sb.109@gmail.com
 # URLs: pypi.org/project/robinhood-portfolio-manager &
@@ -14,12 +14,15 @@
 
 
 import sys
+import time
 import argparse
 from . import Robinhood
 
 
 def main():
+	
 	kwargs = {}
+	
 	parser = argparse.ArgumentParser()
 	parser.add_argument("-c", "--credentials", action="store", nargs=3, required=False, help="Username, password, and TOTP separated by a space", dest="creds")
 	parser.add_argument("-s", "--simulation", action="store_true", required=False, help="Run simulation without placing actual orders", dest="sim")
@@ -30,6 +33,7 @@ def main():
 	parser.add_argument("-r", "--rebalance", action="store_true", required=False, help="Rebalance portfolio", dest="rebalance")
 	parser.add_argument("-d", "--debug", action="store_true", required=False, help="Run test function for debugging", dest="debug")
 	parser.add_argument("-a", "--cancel_open_orders", action="store", choices=["all", "sell", "buy"], required=False, help="Cancel all open orders", dest="cancel_open_orders")
+	
 	args = parser.parse_args()
 
 	if not any(vars(args).values()):
@@ -49,6 +53,7 @@ def main():
 			robinhood.generate_excel_file()
 		else:
 			parser.error("Invalid option. Choose 'csv' or 'exce'.")
+		
 		sys.exit()
 
 	if args.get_new_investments:
