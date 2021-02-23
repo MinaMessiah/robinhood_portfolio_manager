@@ -4,7 +4,7 @@
 # Author: Mina Messiha
 # Copyright: Copyright 2021, robinhood-portfolio-manager
 # License: MIT License
-# Version: 0.0a8
+# Version: 0.0a9
 # Date: 02-22-2021
 # Email: mena.sb.109@gmail.com
 # URLs: pypi.org/project/robinhood-portfolio-manager &
@@ -13,13 +13,13 @@
 ################################################################################################################
 
 
+import sys
 import argparse
 from . import Robinhood
 
 
 def main():
 	kwargs = {}
-	
 	parser = argparse.ArgumentParser()
 	parser.add_argument("-c", "--credentials", action="store", nargs=3, required=False, help="Username, password, and TOTP separated by a space", dest="creds")
 	parser.add_argument("-s", "--simulation", action="store_true", required=False, help="Run simulation without placing actual orders", dest="sim")
