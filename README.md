@@ -1,8 +1,11 @@
-# Robinhood Portfolio Manager
+# Robinhood Portfolio Manager![PyPI - Downloads](https://img.shields.io/pypi/dm/robinhood-portfolio-manager?color=blue&logo=pypi&style=plastic) ![PyPI](https://img.shields.io/pypi/v/robinhood-portfolio-manager?color=gold&label=Version&logo=pypi&logoColor=gold&style=plastic) ![Twitter Follow](https://img.shields.io/twitter/follow/minabolis9?color=%231DA1F2&label=follow&logo=twitter&style=plastic) ![GitHub followers](https://img.shields.io/github/followers/MinaMessiha109?color=white&label=follow&logo=github&style=plastic)
+
+## Description
 
 A python CLI  that allows a Robinhood user to easily allocate and divide his capital on different stocks.
 
 ## Disclaimer
+
 **This tool is intended to simplify and enhance user experience. It does not in any means convey financial advice, and the author is not responsible for any loss that might incur due to it's usage. USE AT YOUR OWN RISK.**
 
 ## Installation
@@ -151,7 +154,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-*For donations*: https://paypal.me/Mina99
+## Donations
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://paypal.me/Mina99)
+[![Donate](https://img.shields.io/badge/Donate-Crypto-gold.svg?logo=bitcoin)](https://commerce.coinbase.com/checkout/ddc1023f-ffb1-44ae-97d0-ee9c494c9869)
+
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MinaMessiha109/robinhood_portfolio_manager/blob/main/LICENSE)

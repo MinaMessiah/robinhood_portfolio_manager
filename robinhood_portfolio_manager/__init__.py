@@ -1,16 +1,16 @@
-########################################################
-# A python CLI that allows a Robinhood user to easily
-# allocate and divide his capital on different stocks.
-########################################################
+################################################################################################################
+# A python CLI that allows a Robinhood user to easily allocate and divide his capital on different stocks.
+################################################################################################################
 # Author: Mina Messiha
 # Copyright: Copyright 2021, robinhood-portfolio-manager
 # License: MIT License
-# Version: 0.0a7
+# Version: 0.0a8
+# Date: 02-22-2021
 # Email: mena.sb.109@gmail.com
 # URLs: pypi.org/project/robinhood-portfolio-manager &
 # github.com/MinaMessiha109/robinhood_portfolio_manager
 # Status: In development
-########################################################
+################################################################################################################
 
 
 import argparse
