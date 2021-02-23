@@ -1,5 +1,5 @@
 # Robinhood Portfolio Manager
-![PyPI - Downloads](https://img.shields.io/pypi/dm/robinhood-portfolio-manager?color=blue&logo=pypi&style=plastic) ![PyPI](https://img.shields.io/pypi/v/robinhood-portfolio-manager?color=gold&label=Version&logo=pypi&logoColor=gold&style=plastic) ![Twitter Follow](https://img.shields.io/twitter/follow/minabolis9?color=%231DA1F2&label=follow&logo=twitter&style=plastic) ![GitHub followers](https://img.shields.io/github/followers/MinaMessiha109?color=white&label=follow&logo=github&style=plastic)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/robinhood-portfolio-manager?color=blue&logo=pypi&style=plastic)](https://pypi.org/project/robinhood-portfolio-manager/) [![PyPI](https://img.shields.io/pypi/v/robinhood-portfolio-manager?color=gold&label=Version&logo=pypi&logoColor=gold&style=plastic)](https://pypi.org/project/robinhood-portfolio-manager/#history) [![Twitter Follow](https://img.shields.io/twitter/follow/minabolis9?color=%231DA1F2&label=follow&logo=twitter&style=plastic)](https://twitter.com/minabolis9) [![GitHub followers](https://img.shields.io/github/followers/MinaMessiha109?color=white&label=follow&logo=github&style=plastic)](http://github.com/MinaMessiha109/)
 
 ## Description
 
