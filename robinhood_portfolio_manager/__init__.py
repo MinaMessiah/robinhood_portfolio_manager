@@ -4,7 +4,7 @@
 # Author: Mina Messiha
 # Copyright: Copyright 2021, robinhood-portfolio-manager
 # License: MIT License
-# Version: 0.0a9
+# Version: 0.0b1
 # Date: 02-22-2021
 # Email: mena.sb.109@gmail.com
 # URLs: pypi.org/project/robinhood-portfolio-manager &
