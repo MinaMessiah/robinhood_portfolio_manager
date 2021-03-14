@@ -1,5 +1,5 @@
 # Robinhood Portfolio Manager
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/robinhood-portfolio-manager?color=blue&logo=pypi&style=plastic)](https://pypi.org/project/robinhood-portfolio-manager/) [![PyPI](https://img.shields.io/pypi/v/robinhood-portfolio-manager?color=gold&label=Version&logo=pypi&logoColor=gold&style=plastic)](https://pypi.org/project/robinhood-portfolio-manager/#history) [![Twitter Follow](https://img.shields.io/twitter/follow/minabolis9?color=%231DA1F2&label=follow&logo=twitter&style=plastic)](https://twitter.com/minabolis9) [![GitHub followers](https://img.shields.io/github/followers/MinaMessiha109?color=white&label=follow&logo=github&style=plastic)](http://github.com/MinaMessiha109/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/robinhood-portfolio-manager?color=blue&logo=pypi&style=plastic)](https://pypi.org/project/robinhood-portfolio-manager/) [![PyPI](https://img.shields.io/pypi/v/robinhood-portfolio-manager?color=gold&label=Version&logo=pypi&logoColor=gold&style=plastic)](https://pypi.org/project/robinhood-portfolio-manager/#history) [![Twitter Follow](https://img.shields.io/twitter/follow/minamessiah?color=%231DA1F2&label=follow&logo=twitter&style=plastic)](https://twitter.com/minamessiah) [![GitHub followers](https://img.shields.io/github/followers/MinaMessiah?color=white&label=follow&logo=github&style=plastic)](http://github.com/MinaMessiah/)
 
 ## Description
 
@@ -48,9 +48,9 @@ to generate a CSV file.
 
 After generating the excel/CSV file, you will have to configure the allocation for each stock. The generated file can be found in the `Documents` directory on Windows and in the user's `home` folder on Linux/Mac.
 
-![Example of a generated excel file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_file.png)
+![Example of a generated excel file](https://raw.githubusercontent.com/MinaMessiah/robinhood_portfolio_manager/main/screenshots/excel_file.png)
 
-![Example of a generated CSV file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/csv_file.png)
+![Example of a generated CSV file](https://raw.githubusercontent.com/MinaMessiah/robinhood_portfolio_manager/main/screenshots/csv_file.png)
 
 ## Example
 Let's say I would like my portfolio to consist of 4 different stocks:
@@ -61,7 +61,7 @@ Let's say I would like my portfolio to consist of 4 different stocks:
 
 I would start by creating a watchlist on Robinhood called `Portfolio` that would hold those 4 stocks.
 
-![Robinhood Portfolio List](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/portfolio_list.png)
+![Robinhood Portfolio List](https://raw.githubusercontent.com/MinaMessiah/robinhood_portfolio_manager/main/screenshots/portfolio_list.png)
 
 I would then run:
 ```bash
@@ -77,9 +77,9 @@ The generated file can be found in the `Documents` directory on Windows and in t
 
 I would like to allocate *10%* to **AAPL**, *20%* to **AMZN**, *30%* to **MSFT**, and finally, *40%* to **TSLA**. Therefore, I would configure my excel/CSV file as follows:
 
-![Example of an allocated excel file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/excel_allocated.png)
+![Example of an allocated excel file](https://raw.githubusercontent.com/MinaMessiah/robinhood_portfolio_manager/main/screenshots/excel_allocated.png)
 
-![Example of an allocated CSV file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/csv_allocated.png)
+![Example of an allocated CSV file](https://raw.githubusercontent.com/MinaMessiah/robinhood_portfolio_manager/main/screenshots/csv_allocated.png)
 
 Finally, I would like rebalance my portfolio to match my allocations. To do so, I would run:
 ```bash
@@ -87,7 +87,7 @@ $ ropoma --rebalance --simulation
 ```
 It's good practice to run the tool using the `-s` or `--simulation` flag. This allows me to check the log file and make sure that the buy/sell orders are correct. The log file will be created in the same directory as excel/CSV file, and will be named `Robinhood.log`. 
 
-![Example of the log file](https://raw.githubusercontent.com/MinaMessiha109/robinhood_portfolio_manager/main/screenshots/log_file.png)
+![Example of the log file](https://raw.githubusercontent.com/MinaMessiah/robinhood_portfolio_manager/main/screenshots/log_file.png)
 
 If the log file looks good, I would then re-run the script without the `--simulation` flag to execute the buy/sell orders.
 ```bash
@@ -162,4 +162,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MinaMessiha109/robinhood_portfolio_manager/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/MinaMessiah/robinhood_portfolio_manager/blob/main/LICENSE)
